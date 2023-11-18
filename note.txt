@@ -3,9 +3,14 @@ composer require livewire/livewire
 ---menghapus namespace otomatis----
 ./vendor/bin/pint
 
+
+php artisan livewire:list
+
 php artisan make:livewire home
 php artisan make:livewire about
 php artisan make:livewire post.index
 php artisan make:livewire user.show
 
 php artisan livewire:form PostForm
+
+php artisan migrate:fresh --seed
